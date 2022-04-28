@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>фильтр авто</title>
+</head>
+<body>
+    <h1><a href="./pages/profile.html" target="blank">Мой профиль</a></h1>
+    <form action="https://fom.in.ua/echo">
+        <label for="search">Поиск</label>
+        <br>
+        <input type="text" id="search" name="search" class="search" placeholder="Что ищете?">
+            <select name="область">
+                <option value="Вся Украина">Вся Украина</option>
+                <option value="Одесская область">Одесская область</option>
+                <option value="Днепропетровская область">Днепропетровская область</option>
+                <option value="Черниговская область">Черниговская область</option>
+                <option value="Харьковская область">Харьковская область</option>
+                <option value="Житомирская область">Житомирская область</option>
+                <option value="Полтавская область">Полтавская область</option>
+                <option value="Херсонская область">Херсонская область</option>
+                <option value="Киевская область">Киевская область</option>
+                <option value="Запорожская область">Запорожская область</option>
+                <option value="Луганская область">Луганская область</option>
+                <option value="Донецкая область">Донецкая область</option>
+                <option value="Винницкая область">Винницкая область</option>
+                <option value="Автономная Республика Крым">Автономная Республика Крым</option>
+                <option value="Кировоградская область">Кировоградская область</option>
+                <option value="Николаевская область">Николаевская область</option>
+                <option value="Сумская область">Сумская область</option>
+                <option value="Львовская область">Львовская область</option>
+                <option value="Черкасская область">Черкасская область</option>
+                <option value="Хмельницкая область">Хмельницкая область</option>
+                <option value="Волынская область">Волынская область</option>
+                <option value="Ровенская область">Ровенская область</option>
+                <option value="Ивано-Франковская область">Ивано-Франковская область</option>
+                <option value="Тернопольская область">Тернопольская область</option>
+                <option value="Закарпатская область">Закарпатская область</option>
+                <option value="Черновицкая область">Черновицкая область</option>
+            </select>
+        <input type="submit" class="submit" value="Поиск">
+        <br>
+        <br>
+        <label for="избраное">Добавить в избраное</label>
+            <input type="checkbox" id="избраное" name="добавить в избраное">
+        <br>
+        <h2>Фильтры</h2>
+        <label for="кузов">Тип кузова</label>
+            <select name="тип кузова" id="кузов">
+                <option value="Тип кузова">Тип кузова</option>
+                <option value="Хэтчбек">Хэтчбек</option>
+                <option value="Кабриолет">Кабриолет</option>
+                <option value="Пикап">Пикап</option>
+                <option value="Купе">Купе</option>
+                <option value="Универсал">Универсал</option>
+                <option value="Минивэн">Минивэн</option>
+                <option value="Внедорожние/Кроссовер">Внедорожние/Кроссовер</option>
+                <option value="Седан">Седан</option>
+                <option value="Лимузин">Лимузин</option>
+                <option value="Лифтбек">Лифтбек</option>
+                <option value="Легковой фургон (до 1,5т)">Легковой фургон (до 1,5т)</option>
+                <option value="Другой тип кузова">Другой тип кузова</option>   
+            </select>
+        <label for="Марка">Марка авто</label>
+            <select name="марка авто" id="Марка">
+                <option value="Любая">Любая</option>
+                <option value="Toyota">Toyota</option>
+                <option value="ВАЗ">ВАЗ</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Hundai">Hundai</option>
+                <option value="Honda">Honda</option>
+                <option value="BMW">BMW</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Skoda">Skoda</option>
+            </select>
+        <label for="Страна">Страна производитель</label>
+            <select name="страна производитель" id="Страна">
+                <option value="Страна">Страна</option>
+                <option value="Украина">Украина</option>
+                <option value="USA">USA</option>
+                <option value="Germani">Germani</option>
+                <option value="россия">россия</option>
+            </select>
+        <label for="Ценамин">Цена от</label>
+            <input type="number" id="Ценамин" name="Цена от" step="1000" min="0" max="100000">
+        <label for="ценамакс">до</label>
+            <input type="number" name="Цена до" id="ценамакс" step="1000" min="0" max="100000">
+        <label for="USD">USD</label>
+            <input type="radio" id="USD" name="Валюта" value="USD">
+        <label for="EU">EU</label>
+            <input type="radio" name="Валюта" id="EU" value="EU">
+        <label for="Грн">Грн</label>
+            <input type="radio" name="Валюта" id="Грн" value="Грн" checked>
+            <br>
+            <br>
+        <label for="годмин">Год от</label>
+            <select name="год от" id="годмин">
+                <option value="1960">1960</option>
+                <option value="1970">1970</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="1995">1995</option>
+                <option value="2000" selected>2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+        <label for="годмакс">до</label>
+            <select name="год до" id="годмакс">
+                <option value="1960">1960</option>
+                <option value="1970">1970</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="1995">1995</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022" selected>2022</option>
+            </select>
+        <label for="Состояние">Состояние</label>
+            <select name="Состояние" id="Состояние">
+                <option value="Все объявления">Все объявления</option>
+                <option value="На ходу,технически исправна">На ходу,технически исправна</option>
+                <option value="Не бита">Не бита</option>
+                <option value="Не крашена">Не крашена</option>
+                <option value="Гаражное хранение">аражное хранение</option>
+                <option value="Первый владелец">Первый владелец</option>
+                <option value="Сервисная книжка">Сервисная книжка</option>
+                <option value="Требуется кузовной ремонт">Требуется кузовной ремонт</option>
+                <option value="Требуется ремонт">Требуется ремонт</option>
+                <option value="Требуется ремонт двигателя">Требуется ремонт двигателя</option>
+                <option value="Не на ходу">Не на ходу</option>
+                <option value="После ДТП">После ДТП</option>
+            </select>
+        <label for="топливо">Вид топлива</label>
+            <select name="топливо" id="топливо">
+                <option value="Все объявления">Все объявления</option>
+                <option value="Бензин">Бензин</option>
+                <option value="Газ/бензин">Газ/бензин</option>
+                <option value="Дизель">Дизель</option>
+                <option value="Гибрид">Гибрид</option>
+                <option value="Электро">Электро</option>
+                <option value="Другой">Другой</option>
+            </select>
+        <label for="коробка">Тип коробки передач</label>
+             <select name="Коробка передач" id="коробка">
+                <option value="Все объявления">Все объявления</option>
+                <option value="Автоматическая">Автоматическая</option>
+                <option value="Механика">Механика</option>
+                <option value="Вариатор">Вариатор</option>
+                <option value="Адаптивная">Адаптивная</option>
+                <option value="Типтроник">Типтроник</option>
+             </select>    
+        <label for="растаможена">Растаможена: Да</label>
+            <input type="radio" name="регистрация" id="растаможена" value="растаможена" checked>
+        <label for="нерастаможена">Нет</label>
+            <input type="radio" name="регистрация" id="нерастаможена" value="не растаможена">
+        <label for="цвет">Цвет</label>
+             <input type="color" name="цвет" id="цвет">
+             <br>
+             <h4>Комфорт:</h4>
+        <label for="кондиционер">Кондиционер</label>
+             <input type="checkbox" id="кондиционер" name="комфорт" value="Кондиционер">
+        <label for="Парктроник">Парктроник</label>
+             <input type="checkbox" id="Парктроник" name="комфорт" value="Парктроник">
+        <label for="датчик_света">Датчик света</label>
+             <input type="checkbox" id="датчик_света" name="комфорт" value="Датчик света">
+        <label for="климат">Климат контроль</label>
+             <input type="checkbox" id="климат" name="комфорт" value="Климат контроль">
+             <br>
+             <br>
+        <label for="круиз">Круиз контроль</label>
+             <input type="checkbox" id="круиз" name="комфорт" value="Круиз контроль">
+        <label for="люк">Люк</label>
+             <input type="checkbox" id="люк" name="комфорт" value="Люк">
+        <label for="мультируль">Мультируль</label>
+             <input type="checkbox" id="мультируль" name="комфорт" value="Мультируль">
+        <label for="подогрев_сидений">Подогрев сидений</label>
+             <input type="checkbox" id="подогрев_сидений" name="комфорт" value="Подогрев сидений">
+    </form>
+    
+</body>
+</html>
